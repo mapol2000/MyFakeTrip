@@ -1,0 +1,134 @@
+/********************************* 태그별 *********************************/
+body {
+    margin: 0;
+    font-size: 2em;
+}
+
+h1,h2 {
+    margin: 0;
+    padding: 0;
+}
+
+body,
+html,
+main {
+  position: relative;
+  height: 100%;
+}
+
+/********************************* 클래스별 *********************************/
+.borderless {
+  border-style: none;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.card {
+  width: 18rem;
+  height: 27rem;
+}
+
+.container{
+    max-width: 1080px;
+    margin: 0 auto;
+}
+
+.iconAlign {
+  margin: 5px;
+}
+
+.imageIcon {
+  width: 24px;
+  height: 24px;
+}
+
+.item{
+    padding: 5%
+}
+
+.item-a{
+    /* background-color: yellow; */
+    position: relative;
+    height: 100%;
+}
+
+.item-b{
+    /* background-color: yellowgreen; */
+}
+
+.item-c{
+    /* background-color: skyblue; */
+}
+
+.logo {
+  width: 100px;
+  height: 100px;
+}
+
+.spacing {
+  margin-left: 20px;
+}
+
+.swiper-container {
+  width: 100%;
+  height: 480px;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.trip-info_header{
+    margin-bottom: 30px;
+}
+
+.trip-info_facebook{
+    width: 240px;
+    margin-right: 56px;
+    display: inline-block;
+    text-align: left;
+    vertical-align: top;
+}
+
+.trip-info_instar{
+    width: 240px;
+    margin-right: 56px;
+    display: inline-block;
+    text-align: left;
+    vertical-align: top;
+}
+
+.trip-info_naver{
+    width: 240px;
+    margin-right: 0;
+    display: inline-block;
+    text-align: left;
+    vertical-align: top;
+}
+
+.verticalDivider {
+  border-left: 1px solid;
+  border-color: lightgray;
+  height: 80%;
+}
+
+
+/********************************* 아이디별 *********************************/

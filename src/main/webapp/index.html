@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>마이페이크트립 :: 나다운 가짜 여행</title>
+  <link rel="stylesheet" href="resources/css/stylesheet.css">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css">
+
+  <!-- swiper -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+</head>
+
+<body>
+
+  <!-- *************************** 헤더 *************************** -->
+  <header>
+    <div class="container">
+      <div class="row">
+        <!-- 윗 헤더 -->
+        <div class="col-2">
+          <!-- 왼쪽 -->
+          <a class="navbar-brand">
+            <!-- 이미지로 나중에 대체 -->
+            <img class="logo" src="resources/img/myfaketrip.jpg" alt="">
+          </a>
+        </div>
+
+        <div class="col-7">
+          <!-- 중간 -->
+          <nav class="navbar navbar-light">
+            <div class="input-group row">
+              <i class="bi bi-search iconAlign"> </i>
+              <input type="text" class="form-control col" style="border: none;" placeholder="도시나 상품을 검색해보세요">
+            </div>
+          </nav>
+        </div>
+
+        <div>
+          <!-- 오른쪽 -->
+          <nav class="navbar navbar-expand-lg navbar-light">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="#">로그인</a>
+                </li>
+                <li class="nav-item spacing">
+                  <button type="button" class="btn btn-outline-primary">회원가입</button>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+
+      </div>
+      <!-- 윗 헤더 -->
+
+      <div class="row">
+        <!-- 아랫 헤더 -->
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <img src="https://d2ur7st6jjikze.cloudfront.net/cms_icons/49_original_1608700445.png?1608700445" alt="비행기 그림" class="imageIcon">
+                  <strong>항공권</strong>
+                </a>
+              </li>
+
+              <li class="nav-item spacing">
+                <a class="nav-link" href="#">
+                  <img src="https://d2ur7st6jjikze.cloudfront.net/cms_icons/50_original_1608701561.png?1608701561" alt="집 그림" class="imageIcon">
+                  <strong>숙소</strong>
+                </a>
+              </li>
+
+              <li class="nav-item spacing">
+                <a class="nav-link" href="#">
+                  <img src="https://d2ur7st6jjikze.cloudfront.net/cms_icons/52_original_1608701643.png?1608701643" alt="자동차 그림" class="imageIcon">
+                  <strong>렌터카/교통</strong>
+                </a>
+              </li>
+
+              <li class="nav-item spacing">
+                <a class="nav-link" href="#">
+                  <img src="https://d2ur7st6jjikze.cloudfront.net/cms_icons/18_original_1592284955.png?1592284955" alt="티켓 그림" class="imageIcon">
+                  <strong>투어/티켓</strong>
+                </a>
+              </li>
+
+              <li class="spacing">
+                <div class="verticalDivider iconAlign">
+                </div>
+              </li>
+
+              <li class="nav-item spacing">
+                <a class="nav-link" href="#">
+                  <strong>랜선투어</strong>
+                </a>
+              </li>
+
+              <li class="nav-item spacing">
+                <a class="nav-link" href="#">
+                  <strong>할인혜택</strong>
+                </a>
+              </li>
+
+            </ul>
+
+          </div>
+        </nav>
+      </div>
+      <!-- 아랫 헤더 -->
+    </div> <!-- 상단 -->
+  </header>
+
+  <hr>
+
+  <!-- *************************** 메인 *************************** -->
+  <div class="main">
+    <div class="container">
+      <section class="item item-a">
+        <div>
+          <div>
+            <h2 style="float: left">어디로 떠나세요?</h2>
+            <a href="/regions" style="padding: 8px 16px; float: right">
+              <img src="https://dffoxz5he03rp.cloudfront.net/icons/ic_all_md_blue_500.svg" alt="ic_all_md_blue_500" class="ShowAllRegions-module__allIcon--7zPbN">
+              <span>전체 도시</span>
+            </a>
+          </div>
+          <div style="clear: both">
+
+            <!-- Swiper -->
+            <div class="swiper-container">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="card">
+                    <img src="https://d2ur7st6jjikze.cloudfront.net/landscapes/4737_large_square_1535949304.jpg?1535949304" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">제주도</h5>
+                      <p class="card-text">2,680여 개의 여행 상품</p>
+                      <a href="#" class="btn btn-light" style="background: white;">둘러보기</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="card">
+                    <img src="https://d2ur7st6jjikze.cloudfront.net/landscapes/4744_large_square_1535960572.jpg?1535960572" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">서울</h5>
+                      <p class="card-text">890여 개의 여행 상품</p>
+                      <a href="#" class="btn btn-light" style="background: white;">둘러보기</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="card">
+                    <img src="https://d2ur7st6jjikze.cloudfront.net/landscapes/832_large_square_1493257137.jpg?1493257137" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">경기도</h5>
+                      <p class="card-text">2,080여 개의 여행 상품</p>
+                      <a href="#" class="btn btn-light" style="background: white;">둘러보기</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="card">
+                    <img src="https://d2ur7st6jjikze.cloudfront.net/landscapes/884_large_square_1502954673.jpg?1502954673" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">대구</h5>
+                      <p class="card-text">60여 개의 여행 상품</p>
+                      <a href="#" class="btn btn-light" style="background: white;">둘러보기</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="card">
+                    <img src="https://d2ur7st6jjikze.cloudfront.net/landscapes/292_large_square_1430355824.jpg?1430355824" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">경주</h5>
+                      <p class="card-text">90여 개의 여행 상품</p>
+                      <a href="#" class="btn btn-light" style="background: white;">둘러보기</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="card">
+                    <img src="https://d2ur7st6jjikze.cloudfront.net/landscapes/897_large_square_1502956281.jpg?1502956281" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">고양</h5>
+                      <p class="card-text">10여 개의 여행 상품</p>
+                      <a href="#" class="btn btn-light" style="background: white;">둘러보기</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="card">
+                    <img src="https://d2ur7st6jjikze.cloudfront.net/landscapes/455_large_square_1439866837.jpg?1439866837" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">경상도</h5>
+                      <p class="card-text">2,420여 개의 여행 상품</p>
+                      <a href="#" class="btn btn-light" style="background: white;">둘러보기</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="card">
+                    <img src="https://d2ur7st6jjikze.cloudfront.net/landscapes/695_large_square_1480568236.jpg?1480568236" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">여수</h5>
+                      <p class="card-text">40여 개의 여행 상품</p>
+                      <a href="#" class="btn btn-light" style="background: white;">둘러보기</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="card">
+                    <img src="https://d2ur7st6jjikze.cloudfront.net/landscapes/456_large_square_1439871496.jpg?1439871496" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">전라도</h5>
+                      <p class="card-text">1,350여 개의 여행 상품</p>
+                      <a href="#" class="btn btn-light" style="background: white;">둘러보기</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="card">
+                    <img src="https://d2ur7st6jjikze.cloudfront.net/landscapes/401_large_square_1435713499.jpg?1435713499" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">부산</h5>
+                      <p class="card-text">320여 개의 여행 상품</p>
+                      <a href="#" class="btn btn-light" style="background: white;">둘러보기</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Add Pagination -->
+              <!-- <div class="swiper-pagination"></div> -->
+              <!-- Add Arrows -->
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+            </div>
+
+            <!-- Swiper JS -->
+            <script src="../package/swiper-bundle.min.js"></script>
+
+            <!-- Initialize Swiper -->
+            <script>
+              var swiper = new Swiper('.swiper-container', {
+                slidesPerView: 3,
+                spaceBetween: 30,
+                slidesPerGroup: 3,
+                loop: true,
+                loopFillGroupWithBlank: true,
+                pagination: {
+                  el: '.swiper-pagination',
+                  clickable: true,
+                },
+                navigation: {
+                  nextEl: '.swiper-button-next',
+                  prevEl: '.swiper-button-prev',
+                },
+              });
+            </script>
+          </div><!-- Swiper 섹션a -->
+        </div>
+      </section>
+
+      <section class="item item-b">
+        <!-- 슬라이드 ad -->
+        <div id="slideAds" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="resources/img/ad_section_b/ad1.png" class="d-block w-100" alt="첫번째 ad">
+            </div>
+            <div class="carousel-item">
+              <img src="resources/img/ad_section_b/ad2.png" class="d-block w-100" alt="두번째 ad">
+            </div>
+            <div class="carousel-item">
+              <img src="resources/img/ad_section_b/ad3.png" class="d-block w-100" alt="세번째 ad">
+            </div>
+            <div class="carousel-item">
+              <img src="resources/img/ad_section_b/ad4.png" class="d-block w-100" alt="네번째 ad">
+            </div>
+            <div class="carousel-item">
+              <img src="resources/img/ad_section_b/ad5.png" class="d-block w-100" alt="다섯번째 ad">
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#slideAds" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#slideAds" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </section><!-- 슬라이드 ad -->
+
+
+      <section class="item item-c">
+        <div>
+          <div>
+            <header class="trip-info_header">
+              <div>
+                <h4 class="SectionHeader-module__title--2JM-O">마이페이크트립의 여행 정보</h4>
+              </div>
+            </header>
+            <div class="jumbotron jumbotron-fluid">
+              <div class="container">
+                <div class="MainInfo-module__box--172JR">
+                  <div class="trip-info_facebook">
+                    <div>
+                      <img
+                        src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMzAiIGhlaWdodD0iMzAiIHZpZXdCb3g9IjAgMCAzMCAzMCI+CiAgICA8ZGVmcz4KICAgICAgICA8cGF0aCBpZD0iYSIgZD0iTTE0Ljk5NCAzMGgxNC45OTRWLjAxMkgwVjMwaDE0Ljk5NHoiLz4KICAgIDwvZGVmcz4KICAgIDxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPGc+CiAgICAgICAgICAgIDxtYXNrIGlkPSJiIiBmaWxsPSIjZmZmIj4KICAgICAgICAgICAgICAgIDx1c2UgeGxpbms6aHJlZj0iI2EiLz4KICAgICAgICAgICAgPC9tYXNrPgogICAgICAgICAgICA8cGF0aCBmaWxsPSIjM0M1QTk5IiBkPSJNMjguMzMzIDMwYy45MTQgMCAxLjY1NS0uNzQxIDEuNjU1LTEuNjU1VjEuNjY3YzAtLjkxNC0uNzQxLTEuNjU1LTEuNjU1LTEuNjU1SDEuNjU1Qy43NDEuMDEyIDAgLjc1MiAwIDEuNjY3djI2LjY3OEMwIDI5LjI1OS43NCAzMCAxLjY1NSAzMGgyNi42Nzh6IiBtYXNrPSJ1cmwoI2IpIi8+CiAgICAgICAgPC9nPgogICAgICAgIDxwYXRoIGZpbGw9IiNGRUZFRkUiIGQ9Ik0yMC41ODMgMzBWMTguNTM1aDMuODI1bC41NzItNC40NjloLTQuMzk3di0yLjg1MmMwLTEuMjk0LjM1Ny0yLjE3NiAyLjItMi4xNzZoMi4zNTJWNS4wNGMtLjQwNy0uMDU0LTEuODAzLS4xNzYtMy40MjctLjE3Ni0zLjM5IDAtNS43MTEgMi4wODItNS43MTEgNS45MDZ2My4yOTVoLTMuODM1djQuNDY5aDMuODM1VjMwaDQuNTg2eiIvPgogICAgPC9nPgo8L3N2Zz4K"
+                        alt="facebook">
+                      <div></div><a href="https://www.facebook.com/myFakeTrip" target="_blank" rel="noopener noreferrer">마이페이크트립 페이스북 페이지
+                        <img class="MainInfoItem-module__arrow--2-zg0"
+                          src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI3IiBoZWlnaHQ9IjEwIiB2aWV3Qm94PSIwIDAgNyAxMCI+CiAgICA8cGF0aCBmaWxsPSIjM0U5MkQ2IiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0wIDguNjI4TDMuODQ3IDQuNzguMjE5IDEuMTUzIDEuMzcyIDBsNC44MTQgNC44MTQtNSA1TDAgOC42Mjh6Ii8+Cjwvc3ZnPgo="
+                          alt="go facebook">
+                      </a>
+                    </div>
+                    <p>마이페이크트립 페이스북 페이지에서 각 여행지별로 정리된 유용한 정보와 여행자분들을 위한 이벤트를 확인해보세요.</p>
+                  </div>
+
+                  <div class="trip-info_instar">
+                    <div>
+                      <img src="https://dffoxz5he03rp.cloudfront.net/build/production/0fcc16c7ece3782e9265b45e56c4e8484aa8fd85/348c9cdd99bf369fc2ff090f26dcc78a.svg" alt="instagram">
+                      <div></div><a href="https://www.instagram.com/myFakeTrip" target="_blank" rel="noopener noreferrer">마이페이크트립 인스타그램
+                        <img
+                          src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI3IiBoZWlnaHQ9IjEwIiB2aWV3Qm94PSIwIDAgNyAxMCI+CiAgICA8cGF0aCBmaWxsPSIjM0U5MkQ2IiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0wIDguNjI4TDMuODQ3IDQuNzguMjE5IDEuMTUzIDEuMzcyIDBsNC44MTQgNC44MTQtNSA1TDAgOC42Mjh6Ii8+Cjwvc3ZnPgo="
+                          alt="go instagram">
+                      </a>
+                    </div>
+                    <p>세계 곳곳에서 활동중인 마이페이크트립의 가이드님과 여행자분들이 보내주신 아름다운 사진을 감상해보세요.</p>
+                  </div>
+
+                  <div class="trip-info_naver">
+                    <div>
+                      <img
+                        src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMCIgaGVpZ2h0PSIzMCIgdmlld0JveD0iMCAwIDMwIDMwIj4KICAgIDxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPHBhdGggZmlsbD0iIzAwQzczQyIgZD0iTTAgMzBoMzBWMEgweiIvPgogICAgICAgIDxwYXRoIGZpbGw9IiNGRkYiIGQ9Ik0xNy4zODUgMjEuODdsLTQuODMtNy4xMXY3LjExSDcuNVY4LjE0NWg1LjEzbDQuODMgNy4wOTVWOC4xNDVoNS4wNFYyMS44N3oiLz4KICAgIDwvZz4KPC9zdmc+Cg=="
+                        alt="naver">
+                      <div></div><a href="https://blog.naver.com/myFakeTrip" target="_blank" rel="noopener noreferrer">마이페이크트립 네이버 블로그
+                        <img
+                          src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI3IiBoZWlnaHQ9IjEwIiB2aWV3Qm94PSIwIDAgNyAxMCI+CiAgICA8cGF0aCBmaWxsPSIjM0U5MkQ2IiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0wIDguNjI4TDMuODQ3IDQuNzguMjE5IDEuMTUzIDEuMzcyIDBsNC44MTQgNC44MTQtNSA1TDAgOC42Mjh6Ii8+Cjwvc3ZnPgo="
+                          alt="go naver">
+                      </a>
+                    </div>
+                    <p>마이페이크트립의 네이버 블로그에서 리얼생생 여행정보, 여행 후기, 추천 가이드 정보를 확인해보세요.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </section>
+    </div>
+  </div>
+
+  <hr>
+
+  <!-- *************************** 푸터 *************************** -->
+  <footer>
+    <div>
+      <div class="container">
+        <div class="footer_module1 row">
+          <div class="footer_a col-md-6 col-xs-12">
+            <h5>고객센터 운영안내</h5>
+            <p>
+              <span class="text-body">평일(채팅/유선) : </span>
+              09:00 - 18:00
+              (12시~13시 제외)
+              <br>
+              <span class="text-body">주말/공휴일 :</span>
+              채팅 상담만 가능
+              <br>
+              <span class="text-body">
+                ※ 항공권 환불/변경 :
+              </span>
+              09:00-17:00까지 접수 가능
+              <br>
+              <span class="text-body">유선상담 : </span>
+              1670-1234
+            </p>
+            <button type="button" style="border: 1px solid #ced4da;" class="btn btn-default">1:1 채팅상담</button>
+          </div>
+          <div class="footer_b col-md-6 col-xs-12">
+            <div>
+              <h5 class="h_1">소개</h5>
+              <ul class="list-unstyled">
+                <!-- 하단 연결링크 삽입 필요-->
+                <li>회사소개</li>
+                <li>채용</li>
+                <li>공고</li>
+              </ul>
+            </div>
+            <div>
+              <h5 class="h_2">파트너</h5>
+              <ul class="list-unstyled">
+                <li>파트너 등록하기</li>
+                <li>Affiliate 프로그램</li>
+                <li>리얼파트너</li>
+                <li>가이드 블로그</li>
+              </ul>
+            </div>
+            <div>
+              <h5 class="h_3">지원</h5>
+              <ul class="list-unstyled">
+                <li>자주 묻는 질문</li>
+                <li>최저가 보장제</li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+        <div class="footer_c col-md-12">
+          <ul class="list-unstyled">
+            <li>이용약관</li>
+            <li>개인정보 처리방침</li>
+            <li>취소 및 환불 정책</li>
+          </ul>
+          <ul class="sns">
+            <div>
+              <img src="resources/img/facebook.png">
+            </div>
+            <div>
+              <img src="resources/img/naver_logo.png">
+            </div>
+            <div>
+              <img src="resources/img/instagram.png">
+            </div>
+            <div>
+              <img src="resources/img/youtube.png">
+            </div>
+            <div class="verticalLine"></div>
+            <div>
+              <img src="resources/img/apple.png">
+            </div>
+            <div>
+              <img src="resources/img/playstore.png">
+            </div>
+          </ul>
+          <select>
+            <option>한국어</option>
+            <option>English</option>
+          </select>
+          <br>
+          <br>
+          <p>상호명 (주)마이페이크트립 | 대표 펭틀린 | 개인정보보호책임자 조아무개 | 사업자등록번호 200-11-55555 <a target="_blank" href="#">사업자정보확인</a>
+            | 통신판매업신고번호 2021-서울00-0000 <br>
+            주소 서울특별시 서초구 강남대로 000, 00빌딩 00층(서초동) | 이메일 help@myfaketrip.com | 마케팅/제휴 문의 marketing@myfaketrip.com
+            <br>
+            <br>
+            자사는 서울특별시관광협회 공제영업보증보험에 가입되어 있습니다. 마이페이크트립은 통신판매중개자이며 통신판매의 당사자가 아닙니다. 따라서 상품·거래정보 및 거래에 대하여 책임을 지지않습니다.
+          </p>
+        </div>
+      </div>
+      <!- 푸터 컨테이너 ->
+    </div>
+  </footer>
+
+  <!-- jQuery and Bootstrap Bundle (includes Popper) -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
