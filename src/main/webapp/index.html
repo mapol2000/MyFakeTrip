@@ -22,104 +22,115 @@
   <!-- *************************** 헤더 *************************** -->
   <header>
     <div class="container">
-      <div>
-      <div class="row align-items-center">
-        <!-- 윗 헤더 -->
-        <div class="col">
-          <!-- 왼쪽 (로고 이미지) -->
-          <a class="navbar-brand">
-            <img class="logo" src="resources/img/myfaketrip.jpg" alt="">
-          </a>
+
+      <!-- 헤더 상단 -->
+      <div class="row">
+
+        <!-- 왼쪽 로고 -->
+        <div class="col-2 d-flex align-items-center">
+          <img class="logo" src="resources/img/myfaketrip.jpg" alt="로고">
         </div>
 
-        <!-- 중간 (검색창)-->
-        <div class="col-7">
-          <nav class="navbar navbar-light">
-            <div class="input-group row">
-              <i class="bi bi-search iconAlign"> </i>
-              <input type="text" class="form-control col" style="border: none;" placeholder="도시나 상품을 검색해보세요">
+        <!-- 중간 검색창 -->
+        <div class="col-5 d-flex align-items-center">
+          <div class="col-1">
+            <i class="bi bi-search iconAlign"> </i>
+          </div>
+          <div class="col">
+            <input type="search" class="form-control no-outline" placeholder="도시나 상품을 검색해보세요" onfocus="this.placeholder = ''"
+onblur="this.placeholder = '도시나 상품을 검색해보세요'">
+          </div>
+        </div>
+
+        <!-- 오른쪽 로그인, 회원가입 -->
+        <div class="col d-flex align-items-center justify-content-center">
+          <nav class="navbar navbar-expand-md navbar-light">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="#">로그인 <span class="sr-only"></span></a>
+                </li>
+                <li class="nav-item">
+                  <button type="button" class="btn btn-outline-info btn-block">회원가입</button>
+                </li>
+              </ul>
+
             </div>
           </nav>
         </div>
-
-        <!-- 오른쪽 (로그인, 회원가입)-->
-        <div class="col">
-        <div style="float: left">
-          <p>
-              <a class="nav-link text-secondary" href="#">로그인</a>
-          </p>
-        </div>
-        <div class="text-wrap" style="float: right; width: 6rem;">
-           <button type="button" class="btn btn-outline-info btn-block">회원가입</button>
-        </div>
       </div>
 
-      </div>
-      <!-- 윗 헤더 -->
-<div>
+      <!-- 헤더 하단 -->
+      <div class="row align-items-center">
 
+        <!-- 왼쪽 메뉴 -->
+        <div class="col-sm-8 row">
+          <div class="col">
+            <a style="text-decoration: none;" href="#">
+              <img src="https://d2ur7st6jjikze.cloudfront.net/cms_icons/49_original_1608700445.png?1608700445" alt="비행기 그림" class="imageIcon">
+              <strong class="text-body">항공권</strong>
+            </a>
+          </div>
 
-      <div class="row">
-        <!-- 아랫 헤더 -->
-        <nav class="navbar navbar-expand-lg navbar-light">
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-              <li class="nav-item">
-                <a class="nav-link" href="#">
-                  <img src="https://d2ur7st6jjikze.cloudfront.net/cms_icons/49_original_1608700445.png?1608700445" alt="비행기 그림" class="imageIcon">
-                  <strong>항공권</strong>
-                </a>
-              </li>
+          <div class="col">
+            <a style="text-decoration: none;" href="#">
+              <img src="https://d2ur7st6jjikze.cloudfront.net/cms_icons/50_original_1608701561.png?1608701561" alt="집 그림" class="imageIcon">
+              <strong class="text-body">숙소</strong>
+            </a>
+          </div>
 
-              <li class="nav-item spacing">
-                <a class="nav-link" href="#">
-                  <img src="https://d2ur7st6jjikze.cloudfront.net/cms_icons/50_original_1608701561.png?1608701561" alt="집 그림" class="imageIcon">
-                  <strong>숙소</strong>
-                </a>
-              </li>
+          <div class="col">
+            <a style="text-decoration: none;" href="#">
+              <img src="https://d2ur7st6jjikze.cloudfront.net/cms_icons/52_original_1608701643.png?1608701643" alt="자동차 그림" class="imageIcon">
+              <strong class="text-body">렌터카/교통</strong>
+            </a>
+          </div>
 
-              <li class="nav-item spacing">
-                <a class="nav-link" href="#">
-                  <img src="https://d2ur7st6jjikze.cloudfront.net/cms_icons/52_original_1608701643.png?1608701643" alt="자동차 그림" class="imageIcon">
-                  <strong>렌터카/교통</strong>
-                </a>
-              </li>
+          <div class="col">
+            <a style="text-decoration: none;" href="#">
+              <img src="https://d2ur7st6jjikze.cloudfront.net/cms_icons/18_original_1592284955.png?1592284955" alt="티켓 그림" class="imageIcon">
+              <strong class="text-body">투어/티켓</strong>
+            </a>
+          </div>
 
-              <li class="nav-item spacing">
-                <a class="nav-link" href="#">
-                  <img src="https://d2ur7st6jjikze.cloudfront.net/cms_icons/18_original_1592284955.png?1592284955" alt="티켓 그림" class="imageIcon">
-                  <strong>투어/티켓</strong>
-                </a>
-              </li>
+        </div>
 
-              <li class="spacing">
-                <div class="verticalDivider iconAlign">
-                </div>
-              </li>
-
-              <li class="nav-item spacing">
-                <a class="nav-link" href="#">
-                  <strong>랜선투어</strong>
-                </a>
-              </li>
-
-              <li class="nav-item spacing">
-                <a class="nav-link" href="#">
-                  <strong>할인혜택</strong>
-                </a>
-              </li>
-
-            </ul>
+        <!-- 중간 디바이더 -->
+        <div class="col-sm-1 dividerOnAndOff">
+          <div class="verticalDivider d-flex justify-content-center">
 
           </div>
-        </nav>
+        </div>
+
+
+        <!-- 오른쪽 메뉴 -->
+        <div class="col row align-items-center mr-5">
+
+          <div class="p-3 col d-flex justify-content-center">
+            <a style="text-decoration: none;" href="#" class="onAndOff">
+              <img src="https://d2ur7st6jjikze.cloudfront.net/cms_icons/53_original_1608701669.png?1608701669" alt="ic_lantour_40x40" class="imageIcon">
+              <strong class="text-body">랜선투어</strong>
+          </div>
+
+          <div class="p-3 col d-flex justify-content-center">
+            <a style="text-decoration: none;" href="#" class="onAndOff">
+              <img src="https://d2ur7st6jjikze.cloudfront.net/cms_icons/24_original_1592285048.png?1592285048" alt="ic_promotion_sm" class="imageIcon">
+              <strong class="text-body">할인혜택</strong>
+            </a>
+          </div>
+
+        </div>
+
+
+
       </div>
-      </div>
-      <!-- 아랫 헤더 -->
-    </div> <!-- 상단 -->
+
+    </div>
+
   </header>
 
   <hr>
