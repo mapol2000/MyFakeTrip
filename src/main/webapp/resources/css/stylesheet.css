@@ -55,6 +55,17 @@ header {
   height: 27rem;
 }
 
+.card-img-overlay h5{
+    font-size: 25px;
+    font-weight: 800;
+}
+
+
+.card-img-overlay a {
+    position: absolute;
+    top: 75%
+}
+
 .container {
   max-width: 1080px;
   margin: 0 auto;
@@ -118,18 +129,20 @@ header {
 }
 
 .item {
-  padding: 5%
+  padding: 2%
 }
 
 .item-a {
   position: relative;
-  height: 100%;
+  height: auto;
 }
 
 .item-b {
+  padding: 0 5%;
 }
 
 .item-c {
+  margin: 0 auto;
 }
 
 .no-outline:focus {
@@ -138,7 +151,7 @@ header {
 
 /*-- MEDIA_PC --*/
 @media screen and (min-width: 769px) {
-  
+
   /* header */
   a strong {
     font-size: .9rem;
@@ -276,7 +289,7 @@ header {
 
 .swiper-container {
   width: 100%;
-  height: 480px;
+  height: auto;
 }
 
 .swiper-slide {
@@ -298,28 +311,43 @@ header {
   align-items: center;
 }
 
+.swiper-slide .card {
+    text-align: left;
+    height: auto;
+    color: whitesmoke;
+    font-weight: 600;
+}
+
 .trip-info_header {
-  margin-bottom: 30px;
+  margin-bottom: 20px;
+}
+
+trip-info{
+    padding: 0 5%;
+}
+
+.trip-info p {
+    margin-top: 5px;
 }
 
 .trip-info_facebook {
-  width: 240px;
-  margin-right: 56px;
+  width: 250px;
+  margin-right: 60px;
   display: inline-block;
   text-align: left;
   vertical-align: top;
 }
 
 .trip-info_instar {
-  width: 240px;
-  margin-right: 56px;
+  width: 250px;
+  margin-right: 60px;
   display: inline-block;
   text-align: left;
   vertical-align: top;
 }
 
 .trip-info_naver {
-  width: 240px;
+  width: 250px;
   margin-right: 0;
   display: inline-block;
   text-align: left;
