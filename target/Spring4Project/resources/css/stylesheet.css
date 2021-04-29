@@ -1,7 +1,7 @@
 /********************************* 태그별 *********************************/
 body {
   margin: 0;
-  font-size: 16px;
+  font-size: 2em;
 }
 
 h1, h2 {
@@ -9,37 +9,12 @@ h1, h2 {
   padding: 0;
 }
 
-input {
-       border-top-style: hidden;
-       border-right-style: hidden;
-       border-left-style: hidden;
-       border-bottom-style: groove;
-       background-color: #eee;
-     }
-
 body,
 html,
 main {
   position: relative;
   height: 100%;
 }
-
-li {
-  float: left;
-}
-
-ul {
-  list-style: none;
-}
-
-ul div {
-  float: left;
-}
-
-header {
-  margin-top: 1rem;
-}
-
 
 /********************************* 클래스별 *********************************/
 .borderless {
@@ -53,17 +28,6 @@ header {
 .card {
   width: 18rem;
   height: 27rem;
-}
-
-.card-img-overlay h5{
-    font-size: 25px;
-    font-weight: 800;
-}
-
-
-.card-img-overlay a {
-    position: absolute;
-    top: 75%
 }
 
 .container {
@@ -145,44 +109,30 @@ header {
 }
 
 .item {
-  padding: 2%
+  padding: 5%
 }
 
 .item-a {
+  /* background-color: yellow; */
   position: relative;
-  height: auto;
+  height: 100%;
 }
 
 .item-b {
-  padding: 0 5%;
+  /* background-color: yellowgreen; */
 }
 
 .item-c {
-  margin: 0 auto;
+  /* background-color: skyblue; */
 }
 
-.no-outline:focus {
-  outline: none;
+.logo {
+  width: 85%;
+  height: 85%;
 }
 
 /*-- MEDIA_PC --*/
 @media screen and (min-width: 769px) {
-
-  /* header */
-  a strong {
-    font-size: .9rem;
-  }
-
-  .logo {
-    width: 10rem;
-    height: 5rem;
-  }
-
-  .onAndOff img {
-    display: none;
-  }
-  /* header */
-
   .sns {
     display: flex;
     flex-direction: row;
@@ -233,29 +183,10 @@ header {
   .sns div {
     margin: 0 20px 0 0;
   }
-
-  input::placeholder {
-    font-size: 0.9rem;
-  }
 }
 
 /*-- MEDIA_MOBILE --*/
 @media screen and (max-width: 768px) {
-  /* header */
-  a strong {
-    font-size: .7rem;
-  }
-
-  .logo {
-    width: 5rem;
-    height: 2.5rem;
-  }
-
-  .dividerOnAndOff {
-    display: none;
-  }
-  /* header */
-
   .sns {
     display: flex;
     flex-direction: row;
@@ -297,10 +228,6 @@ header {
   .btn {
     width: 100%;
   }
-
-  input::placeholder {
-    font-size: 0.8rem;
-  }
 }
 
 .spacing {
@@ -309,7 +236,7 @@ header {
 
 .swiper-container {
   width: 100%;
-  height: auto;
+  height: 480px;
 }
 
 .swiper-slide {
@@ -331,43 +258,28 @@ header {
   align-items: center;
 }
 
-.swiper-slide .card {
-    text-align: left;
-    height: auto;
-    color: whitesmoke;
-    font-weight: 600;
-}
-
 .trip-info_header {
-  margin-bottom: 20px;
-}
-
-trip-info{
-    padding: 0 5%;
-}
-
-.trip-info p {
-    margin-top: 5px;
+  margin-bottom: 30px;
 }
 
 .trip-info_facebook {
-  width: 250px;
-  margin-right: 60px;
+  width: 240px;
+  margin-right: 56px;
   display: inline-block;
   text-align: left;
   vertical-align: top;
 }
 
 .trip-info_instar {
-  width: 250px;
-  margin-right: 60px;
+  width: 240px;
+  margin-right: 56px;
   display: inline-block;
   text-align: left;
   vertical-align: top;
 }
 
 .trip-info_naver {
-  width: 250px;
+  width: 240px;
   margin-right: 0;
   display: inline-block;
   text-align: left;
@@ -375,9 +287,9 @@ trip-info{
 }
 
 .verticalDivider {
-  border-left: .06px solid;
+  border-left: 1px solid;
   border-color: lightgray;
-  height: 1rem;
+  height: 80%;
 }
 
 .verticalLine {
