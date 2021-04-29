@@ -24,17 +24,17 @@ main {
   height: 100%;
 }
 
-li {
-  float: left;
-}
+/*li {*/
+/*  float: left;*/
+/*}*/
 
-ul {
-  list-style: none;
-}
+/*ul {*/
+/*  list-style: none;*/
+/*}*/
 
-ul div {
-  float: left;
-}
+/*ul div {*/
+/*  float: left;*/
+/*}*/
 
 header {
   margin-top: 1rem;
