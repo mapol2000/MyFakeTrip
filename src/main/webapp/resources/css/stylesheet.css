@@ -24,7 +24,7 @@ main {
   height: 100%;
 }
 
-li {
+/* li {
   float: left;
 }
 
@@ -34,7 +34,7 @@ ul {
 
 ul div {
   float: left;
-}
+} */
 
 header {
   margin-top: 1rem;
@@ -200,7 +200,7 @@ header {
     right: 0;
     font-weight: bold;
   }
-    
+
     .footer_b2 {
         display: none;
     }
