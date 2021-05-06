@@ -4,19 +4,10 @@ body {
   font-size: 16px;
 }
 
-h1, h2 {
+/* h1, h2 {
   margin: 0;
   padding: 0;
-}
-
-input {
-       border-top-style: hidden;
-       border-right-style: hidden;
-       border-left-style: hidden;
-       border-bottom-style: groove;
-       background-color: #eee;
-     }
-
+} */
 body,
 html,
 main {
@@ -35,12 +26,14 @@ ul {
 ul div {
   float: left;
 } */
-
 header {
   margin-top: 1rem;
 }
 
-
+header .container {
+  background-color: green;
+  background-image:
+}
 /********************************* 클래스별 *********************************/
 .borderless {
   border-style: none;
@@ -55,20 +48,28 @@ header {
   height: 27rem;
 }
 
-.card-img-overlay h5{
-    font-size: 25px;
-    font-weight: 800;
+.card-img-overlay h5 {
+  font-size: 25px;
+  font-weight: 800;
 }
 
-
 .card-img-overlay a {
-    position: absolute;
-    top: 75%
+  position: absolute;
+  top: 75%
 }
 
 .container {
   max-width: 1080px;
   margin: 0 auto;
+}
+
+.custom_input {
+  border-top-style: hidden;
+  border-right-style: hidden;
+  border-left-style: hidden;
+  border-bottom-style: groove;
+  background-color: #eee;
+  min-width: 12rem;
 }
 
 .footerContainer {
@@ -181,8 +182,26 @@ header {
   .onAndOff img {
     display: none;
   }
-  /* header */
 
+  .sidenav, sidenav a {
+    display: none;
+  }
+
+  .header_span {
+    display: none;
+  }
+
+  div.scrollmenu .item {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+    padding: 0.3rem;
+    margin: 0 .8rem
+  }
+
+  /* header */
   .sns {
     display: flex;
     flex-direction: row;
@@ -201,9 +220,9 @@ header {
     font-weight: bold;
   }
 
-    .footer_b2 {
-        display: none;
-    }
+  .footer_b2 {
+    display: none;
+  }
 
   .footer_b li {
     margin-bottom: 10px;
@@ -234,13 +253,14 @@ header {
     margin: 0 20px 0 0;
   }
 
-  input::placeholder {
+  .custom_input::placeholder {
     font-size: 0.9rem;
   }
 }
 
 /*-- MEDIA_MOBILE --*/
 @media screen and (max-width: 768px) {
+
   /* header */
   a strong {
     font-size: .7rem;
@@ -249,13 +269,89 @@ header {
   .logo {
     width: 5rem;
     height: 2.5rem;
+    position: absolute;
+    left: 12rem;
+    top: 1.1rem;
   }
 
   .dividerOnAndOff {
     display: none;
   }
-  /* header */
 
+  /* The side navigation menu */
+  .sidenav {
+    height: 100%;
+    /* 100% Full-height */
+    width: 0;
+    /* 0 width - change this with JavaScript */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Stay on top */
+    top: 0;
+    /* Stay at the top */
+    left: 0;
+    background-color: white;;
+    /* Black*/
+    overflow-x: hidden;
+    /* Disable horizontal scroll */
+    padding-top: 3.75rem;
+    /* Place content 60px from the top */
+    transition: 0.5s;
+    /* 0.5 second transition effect to slide in the sidenav */
+    padding-top: .9rem;
+  }
+
+  /* The navigation menu links */
+  .sidenav a {
+    padding: .5rem .5rem .5rem 2rem;
+    text-decoration: none;
+    font-size: 1.1rem;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+
+  /* When you mouse over the navigation links, change their color */
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+
+  /* Position and style the close button (top right corner) */
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 1.5rem;
+    font-size: 2rem;
+    margin-left: 3.1rem;
+  }
+
+
+  div.scrollmenu .item {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+    padding: .19rem;
+    margin: 0 .5rem
+  }
+
+  #search-field {
+    display: none;
+  }
+
+  .nav-item a, .nav-item button {
+    display: none;
+  }
+
+  div i {
+    position: absolute;
+    left: 25rem;
+    top: .5rem;
+  }
+
+  /* header */
   .sns {
     display: flex;
     flex-direction: row;
@@ -303,88 +399,138 @@ header {
   }
 }
 
-.spacing {
-  margin-left: 20px;
-}
-
-.swiper-container {
-  width: 100%;
-  height: auto;
-}
-
-.swiper-slide {
-  text-align: center;
-  font-size: 18px;
-  background: #fff;
-  /* Center slide text vertically */
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
+div.scrollmenu {
+  overflow-x: auto;
   display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  -webkit-align-items: center;
-  align-items: center;
+  /* border: solid 1px; */
+  white-space: nowrap;
+  will-change: transform;
+  user-select: none;
+  cursor: pointer;
+  position: relative;
+  width: 100%;
+  margin-top: 1rem;
+  /* background-color: Black; */
 }
 
-.swiper-slide .card {
+div.scrollmenu.active {
+  cursor: -webkit-grabbing;
+}
+
+div.scrollmenu::-webkit-scrollbar {
+  display: none;
+}
+
+/* div.scrollmenu .item {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+  padding: 0.3rem;
+  margin: 0 .8rem
+} */
+
+  /* @media screen and (max-width: 30rem) {
+    min-height: 2rem;
+    min-width: 2rem;
+  } */
+
+  div.scrollmenu .item:hover {
+    background-color: #777;
+  }
+
+  .spacing {
+    margin-left: 20px;
+  }
+
+  .swiper-container {
+    width: 100%;
+    height: auto;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+
+  .swiper-slide .card {
     text-align: left;
     height: auto;
     color: whitesmoke;
     font-weight: 600;
-}
+  }
 
-.trip-info_header {
-  margin-bottom: 20px;
-}
+  .trip-info_header {
+    margin-bottom: 20px;
+  }
 
-trip-info{
+  trip-info {
     padding: 0 5%;
-}
+  }
 
-.trip-info p {
+  .trip-info p {
     margin-top: 5px;
-}
+  }
 
-.trip-info_facebook {
-  width: 250px;
-  margin-right: 60px;
-  display: inline-block;
-  text-align: left;
-  vertical-align: top;
-}
+  .trip-info_facebook {
+    width: 250px;
+    margin-right: 60px;
+    display: inline-block;
+    text-align: left;
+    vertical-align: top;
+  }
 
-.trip-info_instar {
-  width: 250px;
-  margin-right: 60px;
-  display: inline-block;
-  text-align: left;
-  vertical-align: top;
-}
+  .trip-info_instar {
+    width: 250px;
+    margin-right: 60px;
+    display: inline-block;
+    text-align: left;
+    vertical-align: top;
+  }
 
-.trip-info_naver {
-  width: 250px;
-  margin-right: 0;
-  display: inline-block;
-  text-align: left;
-  vertical-align: top;
-}
+  .trip-info_naver {
+    width: 250px;
+    margin-right: 0;
+    display: inline-block;
+    text-align: left;
+    vertical-align: top;
+  }
 
-.verticalDivider {
-  border-left: .06px solid;
-  border-color: lightgray;
-  height: 1rem;
-}
+  .verticalDivider {
+    border-left: .06px solid;
+    border-color: lightgray;
+    height: 1rem;
+  }
 
-.verticalLine {
-  width: 1px;
-  height: 20px;
-  margin: 0 20px 0 0;
-  background-color: #ced4da;
-}
+  .verticalLine {
+    width: 1px;
+    height: 20px;
+    margin: 0 20px 0 0;
+    background-color: #ced4da;
+  }
 
-/********************************* 아이디별 *********************************/
+  /********************************* 아이디별 *********************************/
+  #header-background {
+    /* background-color: yellow; */
+    background-image: url('resources/img/spa-salon-with-beach-view.png');
+  }
+
+  #sidenav-logo {
+    width: 10rem;
+    height: 5rem;
+  }
