@@ -7,7 +7,20 @@ body {
 /* h1, h2 {
   margin: 0;
   padding: 0;
+
+}
+
+/*input {*/
+/*       border-top-style: hidden;*/
+/*       border-right-style: hidden;*/
+/*       border-left-style: hidden;*/
+/*       border-bottom-style: groove;*/
+/*       background-color: #eee;*/
+/*     }*/
+
+
 } */
+
 body,
 html,
 main {
@@ -15,23 +28,36 @@ main {
   height: 100%;
 }
 
+
+/*li {*/
+/*  float: left;*/
+/*}*/
+
 /* li {
   float: left;
 }
 
-ul {
-  list-style: none;
-}
+
+/*ul {*/
+/*  list-style: none;*/
+/*}*/
+
+
+/*ul div {*/
+/*  float: left;*/
+/*}*/
 
 ul div {
   float: left;
 } */
+
 
 header {
   margin-top: 1rem;
 }
 
 /********************************* 클래스별 *********************************/
+/******************* index *******************/
 .borderless {
   border-style: none;
 }
@@ -163,6 +189,9 @@ header {
   outline: none;
 }
 
+
+/*-------------------- MEDIA_PC --------------------*/
+
 .scrollmenu a {
   color: #fff;
   text-decoration: none;
@@ -192,6 +221,7 @@ header {
 }
 
 /*-- MEDIA_PC --*/
+
 @media screen and (min-width: 769px) {
 
   /* header */
@@ -289,7 +319,7 @@ header {
   }
 }
 
-/*-- MEDIA_MOBILE --*/
+/*-------------------- MEDIA_MOBILE --------------------*/
 @media screen and (max-width: 768px) {
 
   /* header */

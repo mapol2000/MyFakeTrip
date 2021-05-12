@@ -1,0 +1,161 @@
+body {
+  margin: 0;
+  font-size: 14px;
+}
+
+/******************* email_sign_up *******************/
+.center-block {
+  border: 1px solid lightgrey;
+  width: 400px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top:30px;
+}
+
+.checkbox {
+  margin-left: 20px;
+}
+
+.esu_ul {
+  list-style: none;
+  border: 1px solid lightgrey;
+  border-radius: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.signupAgree_item {
+  display: flex;
+  margin-left: -25px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.signupAgree_item span {
+  font-size: 12px;
+  color: #848c94;
+}
+
+.form-group {
+  width: 80%;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+.inputbox {
+  margin-top: -15px;
+}
+
+.btn {
+  width: 100%;
+}
+
+.submit-area {
+  width: 90%;
+  text-align: center;
+  margin-left: 5%;
+  margin-bottom: 20px;
+}
+
+.chk_info {
+  font-size: 12px;
+  color: #848c94;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  margin-top: -5px;
+}
+
+.warning{
+  color: #ff8000;
+  font-size: 14px;
+}
+
+/******************* sign_up page *******************/
+
+.signup_container {
+  font-weight: bold;
+  color: #495056;
+}
+
+.signup_block{
+  border: 1px solid lightgrey;
+  width: 400px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top:30px;
+  text-align: center;
+}
+
+.signup_sns {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+}
+
+.sns_line {
+  height: 16px;
+  border-color: #d8d8d8;
+  border-style: solid;
+  border-width: 0 .5px;
+  margin-left: 18px;
+  margin-right: 16px;
+}
+
+.hand_sign {
+  margin-top: 30px;
+  animation: watch 1s linear infinite both;
+}
+
+@keyframes watch {
+  40% {
+    transform: translate(8px, -8px)
+  }
+}
+
+.welcome {
+  font-size: 28px;
+  margin-top: 30px;
+}
+
+.kakao_btn {
+  background-color: #f7e317;
+  border: 0px;
+  outline: 0px;
+  border-radius: 10px;
+  width: 80%;
+  height: 48px;
+  padding-left: 32px;
+  padding-right: 32px;
+  font-weight: bold;
+}
+
+.sns_name {
+  color: #666d75;
+}
+
+.sns_name:hover {
+  color: #1d2124;
+}
+
+.last {
+  margin-bottom: 30px;
+  font-size: 14px;
+}
+
+.last_line {
+  color: #848c94;
+}
+
+.last_login {
+  margin-left: 6px;
+  color: #666d75;
+  text-decoration: underline!important;
+}
+
+.last_login:hover {
+  color: #1d2124;
+}
