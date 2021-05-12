@@ -26,6 +26,7 @@ ul {
 ul div {
   float: left;
 } */
+
 header {
   margin-top: 1rem;
 }
@@ -244,9 +245,15 @@ header {
     font-weight: bold;
   }
 
+
   .footer_b2 {
     display: none;
   }
+
+    .footer_b2 {
+        display: none;
+    }
+
 
   .footer_b li {
     margin-bottom: 10px;
@@ -485,8 +492,13 @@ div.scrollmenu::-webkit-scrollbar {
   margin-bottom: 20px;
 }
 
+
 trip-info {
   padding: 0 5%;
+
+.trip-info{
+    padding: 0 5%;
+
 }
 
 .trip-info p {
