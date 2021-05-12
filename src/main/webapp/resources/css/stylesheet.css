@@ -9,13 +9,13 @@ h1, h2 {
   padding: 0;
 }
 
-input {
-       border-top-style: hidden;
-       border-right-style: hidden;
-       border-left-style: hidden;
-       border-bottom-style: groove;
-       background-color: #eee;
-     }
+/*input {*/
+/*       border-top-style: hidden;*/
+/*       border-right-style: hidden;*/
+/*       border-left-style: hidden;*/
+/*       border-bottom-style: groove;*/
+/*       background-color: #eee;*/
+/*     }*/
 
 body,
 html,
@@ -42,6 +42,7 @@ header {
 
 
 /********************************* 클래스별 *********************************/
+/******************* index *******************/
 .borderless {
   border-style: none;
 }
@@ -165,7 +166,7 @@ header {
   outline: none;
 }
 
-/*-- MEDIA_PC --*/
+/*-------------------- MEDIA_PC --------------------*/
 @media screen and (min-width: 769px) {
 
   /* header */
@@ -239,7 +240,7 @@ header {
   }
 }
 
-/*-- MEDIA_MOBILE --*/
+/*-------------------- MEDIA_MOBILE --------------------*/
 @media screen and (max-width: 768px) {
   /* header */
   a strong {
