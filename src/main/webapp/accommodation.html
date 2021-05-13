@@ -1,5 +1,9 @@
 <!DOCTYPE html>
+
+<html lang="ko" dir="ltr">
+
 <html lang="ko">
+
 
 <head>
   <meta charset="utf-8">
@@ -11,21 +15,17 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css">
 
 
+  <!-- swiper -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
 </head>
 
-<!-- style="
-background-image: url(resources/img/spa-salon-with-beach-view.png);
-background-repeat: no-repeat;
-background-size: contain;
-" -->
-
-<body style="
-background-image: url(resources/img/spa-salon-with-beach-view.png);
-background-repeat: no-repeat;
-background-size: cover;
-">
-
-  <header>
+<body>
+  
+    <header>
     <div class="container">
 
       <div class="upper_header row"> <!-- 상단 헤더 -->
@@ -87,9 +87,246 @@ background-size: cover;
   </header>
   <hr>
 
+<main>
+  <div class="accom_main">
+    <!--수정전-->
+    <section class="section_wrapper margintop_background">
+      <h1 class="accom_main_text">어떤 숙소를 찾으세요?</h1>
+      <div class="accom_searchbox">
+        <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist"><!--숙소검색탭-->
+          <li class="nav-item" role="presentation">
+            <a class="nav-link active" id="pills-hotel-tab" data-toggle="pill" href="#pills-hotel" role="tab" aria-controls="pills-hotel" aria-selected="true">
+              <img class="css-fx6l2h" src="https://dffoxz5he03rp.cloudfront.net/icons/ic_accommodation_hotel_40_x_40_colored.svg" alt="icon">
+              <span>호텔.리조트</span>
+            </a>
+          </li>
+          <li class="nav-item" role="presentation">
+            <a class="nav-link" id="pills-camping-tab" data-toggle="pill" href="#pills-camping" role="tab" aria-controls="pills-camping" aria-selected="false">
+              <img class="css-fx6l2h" src="https://dffoxz5he03rp.cloudfront.net/icons/ic_accommodation_pension_40_x_40_colored.svg" alt="icon">
+              <span>펜션.캠핑</span>
+            </a>
+          </li>
+          <li class="nav-item" role="presentation">
+            <a class="nav-link" id="pills-gamseong-tab" data-toggle="pill" href="#pills-gamseong" role="tab" aria-controls="pills-gamseong" aria-selected="false">
+              <img class="css-fx6l2h" src="https://dffoxz5he03rp.cloudfront.net/icons/ic_accommodation_jeju_40_x_40_colored.svg" alt="icon">
+              <span>제주 감성숙소</span>
+            </a>
+          </li>
+          <li class="nav-item" role="presentation">
+            <a class="nav-link" id="pills-live_month-tab" data-toggle="pill" href="#pills-live_month" role="tab" aria-controls="pills-live_month" aria-selected="false">
+              <img class="css-fx6l2h" src="https://dffoxz5he03rp.cloudfront.net/icons/ic_accommodation_month_40_x_40_colored.svg" alt="icon">
+              <span>제주 한달살기</span>
+            </a>
+          </li>
+        </ul><!--숙소검색탭-->
+
+        <div class="tab-content" id="pills-tabContent">
+          <div class="tab-pane fade show active" id="pills-hotel" role="tabpanel" aria-labelledby="pills-hotel-tab">
+
+            <div class="search_detail_a">
+              <div class="search_detail_b">
+                <div class="search_detail_c">
+                   <span class="search_detail_span">
+                     <img class="search_detail_img" src="https://dffoxz5he03rp.cloudfront.net/icons/ic_location_sm_filled_gray_700.svg" alt="icon"></span>
+                  <input type="text" placeholder="어디로 떠나세요?" class="search_detail_input">
+                </div>
+              </div><!--어디로떠나세요-->
+
+              <div class="search_detail_a2">
+                <div class="search_detail_box">
+                  <div class="search_detail_box_inside_a">
+                    <img class="search_detail_box_inside_b" src="https://dffoxz5he03rp.cloudfront.net/icons/ic_calendar_sm_filled_gray_700.svg" alt="icon">
+                    <span class="search_detail_date_span">6월 3일 (목) - 6월 4일 (금), 1박</span>
+                    <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiIgdmlld0JveD0iMCAwIDE2IDE2Ij4KICAgIDxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPHBhdGggZD0iTTAgMEgxNlYxNkgweiIvPgogICAgICAgIDxwYXRoIHN0cm9rZT0iIzQ5NTA1NiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2Utd2lkdGg9IjIiIGQ9Ik02IDRMMTAgOC4wMDIgNi4wMDUgMTIiIHRyYW5zZm9ybT0icm90YXRlKDkwIDggOCkiLz4KICAgIDwvZz4KPC9zdmc+Cg==" alt="dropdown caret">
+                  </div>
+                </div>
+              </div><!--달력-->
+
+              <div>
+                <div class="search_detail_box">
+                  <div class="search_detail_box_inside_a">
+                    <img class="search_detail_box_inside_b" src="https://dffoxz5he03rp.cloudfront.net/icons/ic_person_sm_filled_gray_700.svg" alt="icon">
+                    <span>성인 2명 / 객실 1개</span>
+                    <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiIgdmlld0JveD0iMCAwIDE2IDE2Ij4KICAgIDxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPHBhdGggZD0iTTAgMEgxNlYxNkgweiIvPgogICAgICAgIDxwYXRoIHN0cm9rZT0iIzQ5NTA1NiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2Utd2lkdGg9IjIiIGQ9Ik02IDRMMTAgOC4wMDIgNi4wMDUgMTIiIHRyYW5zZm9ybT0icm90YXRlKDkwIDggOCkiLz4KICAgIDwvZz4KPC9zdmc+Cg==" alt="dropdown caret">
+                  </div>
+                </div>
+              </div><!--인원수.객실-->
+
+              <span role="button" class="search_detail_btn_a">
+                 <button type="button" class="mrt-button search_detail_btn_b" disabled="">
+                   <span class="search_detail_btn_text">검색</span>
+                 </button>
+               </span><!--검색버튼튼-->
+            </div>
+          </div><!--호텔.리조트-->
+
+          <div class="tab-pane fade" id="pills-camping" role="tabpanel" aria-labelledby="pills-camping-tab">
+            <div class="search_detail_a">
+              <div class="search_detail_b">
+                <div class="search_detail_c">
+                   <span class="search_detail_span">
+                     <img class="search_detail_img" src="https://dffoxz5he03rp.cloudfront.net/icons/ic_location_sm_filled_gray_700.svg" alt="icon"></span>
+                  <input type="text" placeholder="어디로 떠나세요?" class="search_detail_input">
+                </div>
+              </div><!--어디로떠나세요-->
+
+              <div class="search_detail_a2">
+                <div class="search_detail_box">
+                  <div class="search_detail_box_inside_a">
+                    <img class="search_detail_box_inside_b" src="https://dffoxz5he03rp.cloudfront.net/icons/ic_calendar_sm_filled_gray_700.svg" alt="icon">
+                    <span class="search_detail_date_span">6월 3일 (목) - 6월 4일 (금), 1박</span>
+                    <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiIgdmlld0JveD0iMCAwIDE2IDE2Ij4KICAgIDxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPHBhdGggZD0iTTAgMEgxNlYxNkgweiIvPgogICAgICAgIDxwYXRoIHN0cm9rZT0iIzQ5NTA1NiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2Utd2lkdGg9IjIiIGQ9Ik02IDRMMTAgOC4wMDIgNi4wMDUgMTIiIHRyYW5zZm9ybT0icm90YXRlKDkwIDggOCkiLz4KICAgIDwvZz4KPC9zdmc+Cg==" alt="dropdown caret">
+                  </div>
+                </div>
+              </div><!--달력-->
+
+              <div>
+                <div class="search_detail_box">
+                  <div class="search_detail_box_inside_a">
+                    <img class="search_detail_box_inside_b" src="https://dffoxz5he03rp.cloudfront.net/icons/ic_person_sm_filled_gray_700.svg" alt="icon">
+                    <span>성인 2명 / 객실 1개</span>
+                    <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiIgdmlld0JveD0iMCAwIDE2IDE2Ij4KICAgIDxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPHBhdGggZD0iTTAgMEgxNlYxNkgweiIvPgogICAgICAgIDxwYXRoIHN0cm9rZT0iIzQ5NTA1NiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2Utd2lkdGg9IjIiIGQ9Ik02IDRMMTAgOC4wMDIgNi4wMDUgMTIiIHRyYW5zZm9ybT0icm90YXRlKDkwIDggOCkiLz4KICAgIDwvZz4KPC9zdmc+Cg==" alt="dropdown caret">
+                  </div>
+                </div>
+              </div><!--인원수.객실-->
+
+              <span role="button" class="search_detail_btn_a">
+                 <button type="button" class="mrt-button search_detail_btn_b" disabled="">
+                   <span class="search_detail_btn_text">검색</span>
+                 </button>
+               </span><!--검색버튼튼-->
+            </div>
+          </div><!--펜션.캠핑-->
+
+          <div class="tab-pane fade" id="pills-gamseong" role="tabpanel" aria-labelledby="pills-gamseong-tab">
+            <div class="search_detail_a">
+              <div class="search_detail_b">
+                <div class="search_detail_c">
+                   <span class="search_detail_span">
+                     <img class="search_detail_img" src="https://dffoxz5he03rp.cloudfront.net/icons/ic_location_sm_filled_gray_700.svg" alt="icon"></span>
+                  <input type="text" placeholder="제주도" class="search_detail_input">
+                </div>
+              </div><!--제주도 위치-->
+
+              <div class="search_detail_a2">
+                <div class="search_detail_box">
+                  <div class="search_detail_box_inside_a">
+                    <img class="search_detail_box_inside_b" src="https://dffoxz5he03rp.cloudfront.net/icons/ic_calendar_sm_filled_gray_700.svg" alt="icon">
+                    <span class="search_detail_date_span">6월 3일 (목) - 6월 4일 (금), 1박</span>
+                    <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiIgdmlld0JveD0iMCAwIDE2IDE2Ij4KICAgIDxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPHBhdGggZD0iTTAgMEgxNlYxNkgweiIvPgogICAgICAgIDxwYXRoIHN0cm9rZT0iIzQ5NTA1NiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2Utd2lkdGg9IjIiIGQ9Ik02IDRMMTAgOC4wMDIgNi4wMDUgMTIiIHRyYW5zZm9ybT0icm90YXRlKDkwIDggOCkiLz4KICAgIDwvZz4KPC9zdmc+Cg==" alt="dropdown caret">
+                  </div>
+                </div>
+              </div><!--달력-->
+
+              <div>
+                <div class="search_detail_box">
+                  <div class="search_detail_box_inside_a">
+                    <img class="search_detail_box_inside_b" src="https://dffoxz5he03rp.cloudfront.net/icons/ic_person_sm_filled_gray_700.svg" alt="icon">
+                    <span>성인 2명</span>
+                    <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiIgdmlld0JveD0iMCAwIDE2IDE2Ij4KICAgIDxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPHBhdGggZD0iTTAgMEgxNlYxNkgweiIvPgogICAgICAgIDxwYXRoIHN0cm9rZT0iIzQ5NTA1NiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2Utd2lkdGg9IjIiIGQ9Ik02IDRMMTAgOC4wMDIgNi4wMDUgMTIiIHRyYW5zZm9ybT0icm90YXRlKDkwIDggOCkiLz4KICAgIDwvZz4KPC9zdmc+Cg==" alt="dropdown caret">
+                  </div>
+                </div>
+              </div><!--인원수.객실-->
+
+              <span role="button" class="search_detail_btn_a">
+                 <button type="button" class="mrt-button search_detail_btn_b" disabled="">
+                   <span class="search_detail_btn_text">검색</span>
+                 </button>
+               </span><!--검색버튼튼-->
+            </div>
+          </div><!--제주 감성숙소-->
+
+          <div class="tab-pane fade" id="pills-live_month" role="tabpanel" aria-labelledby="pills-live_month-tab">
+            <div class="search_detail_a">
+              <div class="search_detail_b">
+                <div class="search_detail_c">
+                   <span class="search_detail_span">
+                     <img class="search_detail_img" src="https://dffoxz5he03rp.cloudfront.net/icons/ic_location_sm_filled_gray_700.svg" alt="icon"></span>
+                  <input type="text" placeholder="제주도" class="search_detail_input">
+                </div>
+              </div><!--제주도 위치-->
+
+              <div class="search_detail_a2">
+                <div class="search_detail_box">
+                  <div class="search_detail_box_inside_a">
+                    <img class="search_detail_box_inside_b" src="https://dffoxz5he03rp.cloudfront.net/icons/ic_calendar_sm_filled_gray_700.svg" alt="icon">
+                    <span class="search_detail_date_span">6월 3일 (목) - 6월 4일 (금), 1박</span>
+                    <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiIgdmlld0JveD0iMCAwIDE2IDE2Ij4KICAgIDxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPHBhdGggZD0iTTAgMEgxNlYxNkgweiIvPgogICAgICAgIDxwYXRoIHN0cm9rZT0iIzQ5NTA1NiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2Utd2lkdGg9IjIiIGQ9Ik02IDRMMTAgOC4wMDIgNi4wMDUgMTIiIHRyYW5zZm9ybT0icm90YXRlKDkwIDggOCkiLz4KICAgIDwvZz4KPC9zdmc+Cg==" alt="dropdown caret">
+                  </div>
+                </div>
+              </div><!--달력-->
+
+              <div>
+                <div class="search_detail_box">
+                  <div class="search_detail_box_inside_a">
+                    <img class="search_detail_box_inside_b" src="https://dffoxz5he03rp.cloudfront.net/icons/ic_person_sm_filled_gray_700.svg" alt="icon">
+                    <span>성인 2명</span>
+                    <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiIgdmlld0JveD0iMCAwIDE2IDE2Ij4KICAgIDxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPHBhdGggZD0iTTAgMEgxNlYxNkgweiIvPgogICAgICAgIDxwYXRoIHN0cm9rZT0iIzQ5NTA1NiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2Utd2lkdGg9IjIiIGQ9Ik02IDRMMTAgOC4wMDIgNi4wMDUgMTIiIHRyYW5zZm9ybT0icm90YXRlKDkwIDggOCkiLz4KICAgIDwvZz4KPC9zdmc+Cg==" alt="dropdown caret">
+                  </div>
+                </div>
+              </div><!--인원수.객실-->
+
+              <span role="button" class="search_detail_btn_a">
+                 <button type="button" class="mrt-button search_detail_btn_b" disabled="">
+                   <span class="search_detail_btn_text">검색</span>
+                 </button>
+               </span><!--검색버튼튼-->
+            </div>
+          </div><!--제주 한달살기-->
+
+        </div><!--필터-->
+      </div><!--상세검색/탭-->
+
+
+      <h2 class="accom_sub_text">할인혜택</h2>
+      <div class="mar_botm_40">
+        <div class="accom_event_box">
+          <div>
+            <div class="ad_box_details">
+              <img alt="" loading="lazy" class="ad_img_size" src="resources/img/accomm_ad_section_1/hotel_discount.jpg">
+            </div>
+          </div>
+          <div>
+            <div class="ad_box_details">
+              <img alt="" loading="lazy" class="ad_img_size" src="resources/img/accomm_ad_section_1/pension_camping.jpg">
+            </div>
+          </div>
+        </div>
+      </div><!--할인혜텍-->
+
+
+      <h2 class="accom_sub_text">에디터 추천</h2>
+      <div class="mar_botm_120">
+        <div class="accom_editer_box">
+          <div>
+            <div class="ad_box_details">
+              <img alt="" loading="lazy" class="ad_img_size" src="resources/img/editer_reco/jeju_gamsoung.jpg">
+            </div>
+          </div>
+          <div>
+            <div class="ad_box_details">
+              <img alt="" loading="lazy" class="ad_img_size" src="resources/img/editer_reco/seoul_around.jpg">
+            </div>
+          </div>
+          <div>
+            <div class="ad_box_details">
+              <img alt="" loading="lazy" class="ad_img_size" src="resources/img/editer_reco/airbnb.jpg">
+            </div>
+          </div>
+        </div>
+      </div><!--에디터추천-->
+
+
+    </section>
+  </div><!--메인-->
+
+</main>
+
+<!-- jQuery and Bootstrap Bundle (includes Popper) -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
 
 
 
-</body>
 
 </html>
