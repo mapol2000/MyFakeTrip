@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>마이페이크트립 :: 나다운 가짜 여행</title>
+    <link rel="stylesheet" href="resources/css/stylesheet_Signup.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css">
+
+</head>
+
+<body>
+    <div class="sign_container">
+        <form action="/users" method="post">
+            <div  class="center-block">
+                <div class="form-group">
+                        <p style="text-align:left">이름 *</p>
+                        <div class="inputbox">
+                            <input type="text" class="form-control" name="userName" id="userName" placeholder="이름을 입력해주세요.">
+                            <span class="warning">
+                            </span>
+                        </div>
+                </div>
+
+                <div class="form-group">
+                        <p style="text-align:left">이메일 *</p>
+                        <div class="inputbox">
+                            <input type="email" class="form-control" name="email" placeholder="ID@example.com">
+                            <span class="warning">
+                            </span>
+                        </div>
+                </div>
+
+                <div class="form-group">
+                        <p  style="text-align:left">비밀번호 *</p>
+                        <div class="inputbox" >
+                            <input type="password" class="form-control" name="password" maxlength="15" placeholder="영문, 숫자, 특수문자 2가지 조합 6~15자">
+                            <span class="warning">
+                            </span>
+                        </div>
+                </div>
+
+                <div class="form-group">
+                        <p style="text-align:left">비밀번호 확인 *</p>
+                        <div class="inputbox">
+                            <input type="password" class="form-control" name="password2" placeholder="비밀번호를 한번 더 입력해주세요.">
+                            <span class="warning">
+                            </span>
+                        </div>
+                </div>
+
+                <div class="chk_agree">
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox" class="allChk"><strong>&nbsp전체 약관 동의</strong>
+                        </label>
+                    </div>
+                    <div>
+                        <ul class="esu_ul">
+                            <li class="signupAgree_item">
+                                <div>
+                                    <label>
+                                        <input type="checkbox" class="agree-chk" name="agree1" value="Y">
+                                    </label>
+                                </div>
+                                <div>
+                                    <div role="button" tabindex="0">&nbsp회원 가입 및 운영약관 동의 (필수)</div>
+                                </div>
+                            </li>
+                            <li class="signupAgree_item">
+                                <div>
+                                    <label>
+                                        <input type="checkbox" class="agree-chk" name="agree2" value="Y">
+                                    </label>
+                                </div>
+                                <div>
+                                    <div role="button" tabindex="0">&nbsp개인정보 수집 및 이용 (필수)</div>
+                                </div>
+                            </li>
+                            <li class="signupAgree_item">
+                                <div>
+                                    <label>
+                                        <input type="checkbox" class="agree-chk" name="agree3" value="Y">
+                                    </label>
+                                </div>
+                                <div>
+                                    <div role="button" tabindex="0">&nbsp위치정보 이용약관 (필수)</div>
+                                </div>
+                            </li>
+                            <li class="signupAgree_item">
+                                <div>
+                                    <label>
+                                        <input type="checkbox" class="agree-chk" name="agree4" value="Y">
+                                    </label>
+                                </div>
+                                <div>
+                                    <div role="button" tabindex="0">&nbsp특가 항공권 및 할인 혜택 안내 동의 (선택)</div>
+                                    <span>&nbsp프로필 > 알림 설정에서 변경 가능</span>
+                                </div>
+
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="chk_info">
+                        <span>*선택 항목을 동의하지 않아도 서비스를 이용하실 수 있습니다.</span>
+                        <br>
+                        <span>*회원 가입 시 본인이 만 14세 이상임에 동의하게 됩니다.</span>
+                    </div>
+                </div>
+
+                <div class="submit-area">
+                    <button type="button" class="btn btn-primary" name="signup_btn" disabled="disabled">회원가입</button>
+                </div>
+            </div>
+        </form>
+    </div>
+    <!-- jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+    <script src="resources/js/join/signup_email.js" ></script>
+</body>
+
+
+</html>
