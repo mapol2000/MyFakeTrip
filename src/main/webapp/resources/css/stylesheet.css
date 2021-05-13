@@ -19,8 +19,6 @@ body {
 /*     }*/
 
 
-} */
-
 body,
 html,
 main {
@@ -29,27 +27,9 @@ main {
 }
 
 
-/*li {*/
-/*  float: left;*/
-/*}*/
-
-/* li {
-  float: left;
-}
-
-
-/*ul {*/
-/*  list-style: none;*/
-/*}*/
-
-
-/*ul div {*/
-/*  float: left;*/
-/*}*/
-
 ul div {
   float: left;
-} */
+}
 
 
 header {
@@ -525,10 +505,6 @@ div.scrollmenu::-webkit-scrollbar {
 
 trip-info {
   padding: 0 5%;
-
-.trip-info{
-    padding: 0 5%;
-
 }
 
 .trip-info p {
