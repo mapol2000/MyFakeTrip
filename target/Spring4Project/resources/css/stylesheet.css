@@ -4,10 +4,20 @@ body {
   font-size: 16px;
 }
 
-h1, h2 {
+/* h1, h2 {
   margin: 0;
   padding: 0;
+
 }
+
+
+/*input {
+       border-top-style: hidden;
+       border-right-style: hidden;
+       border-left-style: hidden;
+       border-bottom-style: groove;
+       background-color: #eee;
+     }*/
 
 /*input {*/
 /*       border-top-style: hidden;*/
@@ -17,6 +27,13 @@ h1, h2 {
 /*       background-color: #eee;*/
 /*     }*/
 
+
+<<<<<<< HEAD
+=======
+} */
+
+
+>>>>>>> ef1fae4a083fabf395526c1488c4fe8727d1d8d3
 body,
 html,
 main {
@@ -24,22 +41,15 @@ main {
   height: 100%;
 }
 
-/*li {*/
-/*  float: left;*/
-/*}*/
 
-/*ul {*/
-/*  list-style: none;*/
-/*}*/
+ul div {
+  float: left;
+}
 
-/*ul div {*/
-/*  float: left;*/
-/*}*/
 
 header {
   margin-top: 1rem;
 }
-
 
 /********************************* 클래스별 *********************************/
 /******************* index *******************/
@@ -56,20 +66,28 @@ header {
   height: 27rem;
 }
 
-.card-img-overlay h5{
-    font-size: 25px;
-    font-weight: 800;
+.card-img-overlay h5 {
+  font-size: 25px;
+  font-weight: 800;
 }
 
-
 .card-img-overlay a {
-    position: absolute;
-    top: 75%
+  position: absolute;
+  top: 75%
 }
 
 .container {
   max-width: 1080px;
   margin: 0 auto;
+}
+
+.custom_input {
+  border-top-style: hidden;
+  border-right-style: hidden;
+  border-left-style: hidden;
+  border-bottom-style: groove;
+  background-color: #eee;
+  min-width: 12rem;
 }
 
 .footerContainer {
@@ -166,7 +184,39 @@ header {
   outline: none;
 }
 
+
 /*-------------------- MEDIA_PC --------------------*/
+
+.scrollmenu a {
+  color: #fff;
+  text-decoration: none;
+  letter-spacing: 0.15em;
+  display: inline-block;
+  padding: 15px 20px;
+  position: relative;
+}
+
+.scrollmenu a:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  text-decoration: none;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: #fff;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+
+.scrollmenu a:hover:after {
+  width: 100%;
+  left: 0;
+}
+
+/*-- MEDIA_PC --*/
+
 @media screen and (min-width: 769px) {
 
   /* header */
@@ -182,8 +232,26 @@ header {
   .onAndOff img {
     display: none;
   }
-  /* header */
 
+  .sidenav, sidenav a {
+    display: none;
+  }
+
+  .header_span {
+    display: none;
+  }
+
+  div.scrollmenu .item {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+    padding: 0.3rem;
+    margin: 0 .8rem
+  }
+
+  /* header */
   .sns {
     display: flex;
     flex-direction: row;
@@ -201,10 +269,16 @@ header {
     right: 0;
     font-weight: bold;
   }
-    
+
+
+  .footer_b2 {
+    display: none;
+  }
+
     .footer_b2 {
         display: none;
     }
+
 
   .footer_b li {
     margin-bottom: 10px;
@@ -235,13 +309,14 @@ header {
     margin: 0 20px 0 0;
   }
 
-  input::placeholder {
+  .custom_input::placeholder {
     font-size: 0.9rem;
   }
 }
 
 /*-------------------- MEDIA_MOBILE --------------------*/
 @media screen and (max-width: 768px) {
+
   /* header */
   a strong {
     font-size: .7rem;
@@ -250,13 +325,90 @@ header {
   .logo {
     width: 5rem;
     height: 2.5rem;
+    position: absolute;
+    left: 12rem;
+    top: .5rem;
   }
 
   .dividerOnAndOff {
     display: none;
   }
-  /* header */
 
+  /* The side navigation menu */
+  .sidenav {
+    height: 100%;
+    /* 100% Full-height */
+    width: 0;
+    /* 0 width - change this with JavaScript */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Stay on top */
+    top: 0;
+    /* Stay at the top */
+    left: 0;
+    background-color: white;
+    /* Black*/
+    overflow-x: hidden;
+    /* Disable horizontal scroll */
+    padding-top: 3.75rem;
+    /* Place content 60px from the top */
+    transition: 0.5s;
+    /* 0.5 second transition effect to slide in the sidenav */
+    padding-top: .9rem;
+  }
+
+  /* The navigation menu links */
+  .sidenav a {
+    padding: .5rem .5rem .5rem 2rem;
+    text-decoration: none;
+    font-size: 1.1rem;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+
+  /* When you mouse over the navigation links, change their color */
+  .sidenav a:hover {
+    color: black;
+  }
+
+  /* Position and style the close button (top right corner) */
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 1.5rem;
+    font-size: 2rem;
+    margin-left: 3.1rem;
+  }
+
+  div.scrollmenu .item {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+    padding: .19rem;
+    margin: 0 .5rem
+  }
+
+  #search-field {
+    display: none;
+  }
+
+  .upper-right a, .upper-right button {
+    display: none;
+  }
+
+  div .search-icon {
+    position: absolute;
+    left: 22rem;
+    top: .5rem;
+  }
+
+
+
+  /* header */
   .sns {
     display: flex;
     flex-direction: row;
@@ -304,6 +456,28 @@ header {
   }
 }
 
+div.scrollmenu {
+  overflow-x: auto;
+  display: flex;
+  /* border: solid 1px; */
+  white-space: nowrap;
+  will-change: transform;
+  user-select: none;
+  cursor: pointer;
+  position: relative;
+  width: 100%;
+  margin-top: 1rem;
+  /* background-color: Black; */
+}
+
+div.scrollmenu.active {
+  cursor: -webkit-grabbing;
+}
+
+div.scrollmenu::-webkit-scrollbar {
+  display: none;
+}
+
 .spacing {
   margin-left: 20px;
 }
@@ -333,22 +507,23 @@ header {
 }
 
 .swiper-slide .card {
-    text-align: left;
-    height: auto;
-    color: whitesmoke;
-    font-weight: 600;
+  text-align: left;
+  height: auto;
+  color: whitesmoke;
+  font-weight: 600;
 }
 
 .trip-info_header {
   margin-bottom: 20px;
 }
 
-trip-info{
-    padding: 0 5%;
+
+trip-info {
+  padding: 0 5%;
 }
 
 .trip-info p {
-    margin-top: 5px;
+  margin-top: 5px;
 }
 
 .trip-info_facebook {
@@ -389,3 +564,281 @@ trip-info{
 }
 
 /********************************* 아이디별 *********************************/
+
+
+/*--------------------------------숙소메인------------------------------------*/
+/*섹션*/
+.margintop_background {
+  position: relative;
+  margin-top: -112px;
+  z-index: 1;
+}
+.section_wrapper {
+  max-width: 1060px;
+  margin: auto;
+}
+
+/*검색창전체*/
+.accom_searchbox {
+  padding: 4px 20px 20px;
+  margin-bottom: 40px;
+  border-radius: 8px;
+  box-shadow: rgb(33 37 41 / 10%) 0px 4px 8px 0px;
+  background-color: var(--white);
+}
+
+
+/*메인.서브 타이틀*/
+.accom_main_text {
+  font-weight: bold;
+  font-size: 36px;
+  letter-spacing: -0.4px;
+  color: black;/*var(--white);*/
+  margin-bottom: 24px;
+}
+
+.accom_sub_text {
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 1.08;
+  letter-spacing: -0.3px;
+  color: var(--gray-800);
+  margin-bottom: 20px;
+}
+
+/*상세검색창*/
+
+.search_detail_a {
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: start;
+  justify-content: flex-start;
+}
+
+/*어디로 떠나세요*/
+.search_detail_a > div {
+  margin-right: 8px;
+}
+
+.search_detail_b {
+  position: relative;
+}
+
+.search_detail_c {
+  display: inline-block;
+  position: relative;
+  width: 100%;
+}
+
+.search_detail_span {
+  position: absolute;
+  top: 50%;
+  left: 14px;
+  transform: translateY(-50%);
+  color: var(--gray-500);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1;
+}
+
+.search_detail_img {
+  display: inline-block;
+  border: 0px;
+}
+
+
+.search_detail_input {
+  width: 100%;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  box-shadow: inset 0 0 0 1px var(--gray-300);
+  border-radius: 4px;
+  border: 0px;
+  outline-style: none;
+  color: var(--gray-800);
+  font-weight: 500;
+  letter-spacing: -0.2px;
+  height: 48px;
+  font-size: 16px;
+  padding: 14px 14px 14px 42px;
+  background-color: lightgrey;
+}
+
+
+/*달력*/
+.search_detail_a > div:nth-of-type(2) {
+  width: 350px;
+}
+
+.search_detail_a2 {
+  display: flex;
+  flex-direction: column;
+}
+
+.search_detail_box {
+  display: inline-block;
+  min-width: 238px;
+  border-radius: 4px;
+  font-weight: 500;
+  letter-spacing: -0.2px;
+  cursor: pointer;
+  height: 48px;
+  font-size: 16px;
+  padding: 14px 14px 14px 42px;
+  width: 100%;
+  position: relative;
+  box-shadow: none;
+  background-color: lightgrey;/*var(--gray-700);*/
+}
+
+.search_detail_box_inside_a {
+  display: flex;
+  flex-direction: row;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  line-height: 1.25;
+}
+
+.search_detail_box_inside_b {
+  display: inline-block;
+  border: 0px;
+  position: absolute;
+  top: 14px;
+  left: 14px;
+}
+
+.search_detail_date_span {
+  width: 100%;
+}
+
+/*인원수.객식*/
+.search_detail_a > div:nth-of-type(3) {
+  width: 286px;
+}
+
+
+/*검색버튼*/
+.search_detail_btn_a {
+  position: relative;
+  display: inline-flex;
+}
+
+.search_detail_btn_b {
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+  text-align: center;
+  border: 0px;
+  border-radius: 4px;
+  font-weight: bold;
+  letter-spacing: -0.2px;
+  transition: all 0.3s ease 0s;
+  user-select: none;
+  outline-style: none;
+  cursor: pointer;
+  height: 48px;
+  padding: 0px 32px;
+  font-size: 16px;
+  color: white;
+  background-color: lightskyblue; /*var(--blue-400);*/
+}
+
+.search_detail_btn_text {
+  display: flex;
+  flex-direction: row;
+  -webkit-box-align: center;
+  align-items: center;
+}
+
+/*할인혜텍*/
+.mar_botm_40 {
+  margin-bottom: 40px;
+}
+
+.accom_event_box {
+  display: flex;
+  flex-wrap: wrap;
+  -webkit-box-pack: start;
+  justify-content: flex-start;
+  margin: 0px -8px;
+}
+
+.accom_event_box div {
+  width: 522px;
+  height: 140px;
+  margin: 0px 8px 16px;
+}
+
+.ad_box_details {
+  width: inherit;
+  height: inherit;
+  flex-direction: column;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+  border-radius: 8px;
+  background-color: var(--gray-80);
+  cursor: pointer;
+}
+
+.ad_img_size {
+  display: inline-flex;
+  overflow: hidden;
+  position: relative;
+  inset: 0px;
+  width: inherit;
+  height: inherit;
+  min-width: inherit;
+  min-height: inherit;
+  object-fit: cover;
+}
+
+.accom_event_box::after {
+  content: "";
+  flex: 1 1 auto;
+}
+
+/*에디터추천*/
+.mar_botm_120 {
+  margin-bottom: 120px;
+}
+
+.accom_editer_box {
+  display: flex;
+  flex-wrap: wrap;
+  -webkit-box-pack: start;
+  justify-content: flex-start;
+  margin: 0px -8px;
+}
+
+.accom_editer_box div {
+  width: 342px;
+  height: 240px;
+  margin: 0px 8px 16px;
+}
+/*--------------------------------숙소메인------------------------------------*/
+
+
+.background {
+  background-image: url(resources/img/spa-salon-with-beach-view.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+#sidenav-logo {
+  width: 10rem;
+  height: 5rem;
+}
+

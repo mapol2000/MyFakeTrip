@@ -3,7 +3,7 @@ body {
   font-size: 14px;
 }
 
-/******************* email_sign_up *******************/
+/******************* 회원가입_이메일 : email_sign_up *******************/
 .center-block {
   border: 1px solid lightgrey;
   width: 400px;
@@ -71,7 +71,7 @@ body {
   font-size: 14px;
 }
 
-/******************* sign_up page *******************/
+/******************* 회원가입 : sign_up page *******************/
 
 .signup_container {
   font-weight: bold;
@@ -158,4 +158,67 @@ body {
 
 .last_login:hover {
   color: #1d2124;
+}
+
+/******************* 로그인 : sign_in page *******************/
+
+.signin_container {
+  font-weight: bold;
+  color: #495056;
+}
+
+.signin_block{
+  border: 1px solid lightgrey;
+  width: 400px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top:30px;
+  text-align: center;
+}
+
+.signin_sns {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+}
+
+.last_signup {
+  margin-left: 6px;
+  color: #666d75;
+  text-decoration: underline!important;
+}
+
+.last_signup:hover {
+  color: #1d2124;
+}
+
+/******************* 로그인_이메일 : signin_email page *******************/
+.keepbox {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.find_pwd {
+  text-decoration: none;
+  cursor: pointer;
+  color: #666d75;
+}
+
+.find_pwd:hover {
+  text-decoration: none;
+  color: #1d2124;
+}
+
+.last1 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 14px;
 }

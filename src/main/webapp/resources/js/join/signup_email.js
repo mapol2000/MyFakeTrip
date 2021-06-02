@@ -57,7 +57,7 @@ $('[name="email"]').on('change keyup paste focus',function(){
 $('[name="password"]').on('change keyup paste focus',function(){
     var text_area = $(this).parent().find('.warning');
     var password = $(this).val();
-    if(!/^(?=.*[a-zA-Z])(?=.*[!@#$%^*+=-])(?=.*[0-9]).{6,15}$/.test(password)){
+    if(!/^(?=.*[a-zA-Z])(?=.*[!@#$%^&*()+=-])(?=.*[0-9]).{6,15}$/.test(password)){
         text_area.text('숫자,영문,특수문자 조합으로 6~15자리 사용해야 합니다.');
     }else if(/(\w)\1\1\1/.test(password)){
         text_area.text('같은 문자를 4번 이상 사용하실 수 없습니다.');
@@ -111,7 +111,7 @@ function allDataChk(){
     var password = $('[name="email"]').val();
     var password2 = $('[name="email"]').val();
 
-    if(!/^(?=.*[a-zA-Z])(?=.*[!@#$%^*+=-])(?=.*[0-9]).{6,15}$/.test(password)){
+    if(!/^(?=.*[a-zA-Z])(?=.*[!@#$%^&*()+=-])(?=.*[0-9]).{6,15}$/.test(password)){
         chk = false;
         $('[name="signup_btn"]').attr('disabled', true);
         return;
